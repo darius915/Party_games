@@ -1,17 +1,17 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home.jsx'
 import TruthOrDare from './pages/TruthOrDare.jsx'
-import SpinTheBottle from './pages/SpinTheBottle.jsx'  // ← Add this line
+import SpinTheBottle from './pages/SpinTheBottle.jsx'
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/truth-or-dare" element={<TruthOrDare />} />
-        <Route path="/spin-the-bottle" element={<SpinTheBottle />} />  // ← Add this line
+        <Route path="/spin-the-bottle" element={<SpinTheBottle />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
